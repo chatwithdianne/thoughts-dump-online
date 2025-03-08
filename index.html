@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts Dump!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Make sure the CSS file is linked correctly -->
+</head>
+<body>
+
+    <!-- Admin Login Link (Hidden Initially) -->
+    <a href="admin-login.html" class="admin-login" id="adminLogin">Admin Login</a>
+
+    <div class="container">
+        <!-- Main Title -->
+        <header>
+            <h1>Thoughts Dump</h1>
+            <p class="subheading">Welcome to the Thoughts Dump — where no thought is too random, too weird, or too awkward to share.</p>
+        </header>
+
+        <!-- Thought Box Section -->
+        <div class="thought-box">
+            <textarea id="message" placeholder="Dump your thoughts here" name="message"></textarea>
+            <div class="note-clips">
+                <div class="clip clip-top"></div>
+                <div class="clip clip-bottom"></div>
+            </div>
+        </div>
+
+        <!-- Options for Response -->
+        <div class="options">
+            <label>
+                <input type="radio" name="response" value="email" /> Enter your email
+                <div class="email-info">Your thoughts are safe here. If you leave your email, it will only be used to send you a personal reply. We keep everything private.</div>
+                <input type="email" name="email" placeholder="Enter your email here">
+            </label>
+            <label>
+                <input type="radio" name="response" value="tiktok" /> Post on TikTok for Public Response/Advice (anonymous)
+            </label>
+            <label>
+                <input type="radio" name="response" value="anonymous" /> Post it anonymously
+            </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="cta-button" onclick="submitForm()">Dump it!</button>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script> <!-- Ensure the script file is linked correctly -->
+</body>
+</html>
