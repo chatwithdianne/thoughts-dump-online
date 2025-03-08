@@ -14,56 +14,58 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8f8f8; /* Light background */
+            background-color: #f5f5f5;
             color: #333;
             line-height: 1.6;
             font-size: 16px;
         }
 
-        /* Utility Classes */
+        /* Full Screen Layout */
         .container {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             min-height: 100vh;
-            text-align: center;
-            padding: 20px;
+            padding: 40px;
+            background: linear-gradient(135deg, #f3f4f7 25%, #ff4d6d 75%);
+            position: relative;
         }
 
         /* Header Section */
         header {
+            text-align: center;
             margin-bottom: 40px;
         }
 
         header h1 {
-            font-family: 'Dancing Script', cursive; /* Fun, playful handwriting font */
-            font-size: 4rem; /* Large title */
-            color: #ff4d6d; /* Bold pink */
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: #ff4d6d;
             letter-spacing: 2px;
             margin-bottom: 10px;
         }
 
         header .subheading {
-            font-size: 1.25rem;
-            font-weight: bold;
+            font-size: 1.5rem;
             color: #333;
+            font-weight: bold;
             max-width: 80%;
             margin: 0 auto;
-            padding-top: 10px;
         }
 
         /* Confirmation Message */
         .confirmation-message {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             color: #333;
             margin-bottom: 30px;
+            text-align: center;
         }
 
         /* Share Section (Social Media Links) */
         .share-section {
             margin-top: 40px;
+            text-align: center;
         }
 
         .share-section p {
@@ -80,8 +82,8 @@
         }
 
         .social-icons img {
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             transition: transform 0.3s ease;
         }
 
@@ -123,11 +125,6 @@
                 margin: 0 5px;
             }
 
-            .cta-button {
-                width: 80%;
-                font-size: 1.2rem;
-            }
-
             .coffee-section {
                 font-size: 0.9rem;
             }
@@ -148,29 +145,12 @@
             <p>We appreciate you sharing your thoughts. Take a deep breath, you’re awesome!</p>
         </div>
 
-        <!-- Share Section (Social Media Links) -->
-        <div class="share-section">
-            <p>Share the good vibes! Tell your friends or post it on social media to spread the fun!</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank">
-                    <img src="facebook-icon.png" alt="Share on Facebook">
-                </a>
-                <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20this%20out!" target="_blank">
-                    <img src="twitter-icon.png" alt="Share on Twitter">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="instagram-icon.png" alt="Share on Instagram">
-                </a>
-            </div>
-        </div>
-
         <!-- Coffee Section (Small and Cute) -->
         <div class="coffee-section">
             <p>If you'd like to show some love, feel free to buy me a coffee! It’s totally optional:</p>
             <img src="your-maya-qr-code.png" alt="Maya QR Code">
             <p>Scan the QR code to buy me a coffee. ☕</p>
         </div>
-
     </div>
 
 </body>
